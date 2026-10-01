@@ -1,0 +1,27 @@
+export(initialise.simulation.progress,
+       ACC, RCC,
+       screenprint.simulation.progress)
+
+export(initialise.list.species,
+       initialise.list.reaction,
+       initialise.list.element,
+       initialise.species.matrix,
+       initialise.element.matrix,
+       updating.chemical.species,
+       updating.composite.species,
+       updating.elements)
+
+export(setup.plot.info,
+       setup.simulation.list,
+       plot.simulation.list,
+       plot.diagen.1D,
+       lines.diagen.1D,
+       points.diagen.1D,
+       screenprint.simulation.summary)
+
+S3method(plot, simulation.list)
+S3method(plot, diagen.1D)
+S3method(lines, diagen.1D)
+S3method(points, diagen.1D)
+
+importFrom(graphics, abline, axis, lines, matplot, par, plot, points)
